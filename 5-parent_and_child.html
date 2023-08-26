@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parant and Child</title>
+</head>
+<body>
+
+
+    <div>
+        <div>
+            <h1>
+                <p>
+                    <li></li>
+                </p>
+            </h1>
+        </div>
+    </div>  <!-- div>div>h1>p>li + Enter -->
+
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>  <!-- div*5 + Enter -->
+
+    <div>
+        <div>
+            <p>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+            </p>
+        </div>
+    </div> <!-- div>div>p>li*5 + Enter -->
+
+    <div class="class1">
+        <div class="class2">
+            <p id="lolo">
+                <li></li>
+                <li></li>
+                <li></li>
+            </p>
+        </div>
+    </div> <!-- div.class1>div.class2>p#lolo>li*3 + Enter -->
+
+    <!-- Siblings -->
+    <p></p>
+    <p></p>
+    <p></p>
+    <p></p>
+    <p></p> <!-- p+p+p+p+p + Enter -->
+
+    <ul>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+    </ul> <!-- ul>li*5 + Enter -->
+
+    <!-- Grouping -->
+    <div>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <section></section>
+    </div> <!-- div>(li*5)+section + Enter -->
+</body>
+</html>
