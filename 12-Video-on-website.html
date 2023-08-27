@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Adding video on web-page </title>
+</head>
+<body>
+    <!-- controls : ye video me controlles dal deta hai.
+    autoplay : Jab hamara webpage lode hoga tab video automatically play hone lagega.
+    muted : Ye video ke sound ko mute kardeta hai.(matlab ki jab video webpage par lode hoga to hamara video muted hoga.
+    height : Ye hamare video ka height nirdhari karta hai.
+    width : Ye hamare video ka width nidharit karta hai.)  -->
+
+    <!-- Ayse kisi bhi video ko add kiya ja sakta hai. -->
+    <h1>1st way of adding video on web-page</h1>
+    <video src="https://player.vimeo.com/progressive_redirect/playback/825285890/rendition/360p/file.mp4?loc=external&oauth2_token_id=57447761&signature=0ae2d998bebbd1b250a3edddc1129b670e2fbe2df23829cc8cabef3e7e2b9187" controls autoplay muted width="560px" height="315px" >Samudra ka pani</video>
+
+    <h1>2nd way adding video on web-page(using "video" and "source")</h1>
+    <video controls autoplay muted height="300px" width="500px" >
+        <source src="https://player.vimeo.com/progressive_redirect/playback/851839571/rendition/360p/file.mp4?loc=external&oauth2_token_id=57447761&signature=f118bf951d9471b287b80dc7d053ea24a4ca71dec5f0f2b8ac42876268730d8f">
+        <source src="https://player.vimeo.com/progressive_redirect/playback/843865896/rendition/540p/file.mp4?loc=external&oauth2_token_id=57447761&signature=d4380bca051535975265c63ea352ee38b53253aac51d061dd460a1fde90b414b">
+    </video>
+
+    <h1>Adding youtube video on web-page</h1>
+    <!-- Youtube ke videos ko webpage me lana : Youtube me share ke option me ja karke humlog embed par click karke link ko copy karlenge aur yanha pest ardenge. -->
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/knY3F8GMyEo?si=oLb3e94gl8kAHnu6" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+</body>
+</html>

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms of HTML</title>
+</head>
+<body>
+                                        <!-- form -->
+
+    <!-- id="" : data kis field ka hai use janne ke liye "id" ka use kiya jata hai. -->
+    <!-- name="" : kisi field ke accourding kya value server me aa raha hai use janne keliye humlog name atribte ka prayog karten hai.  -->
+    <!-- <label for=""></label> : Lable hame ye batlata hai ki form ke ield me kya fill karna hai hai. -->
+    <!-- <fieldset></fieldset> : fieldset ke andar me form ka code likhne se hamara ek form ka code dusre form ke code se saperate rehta hai.Aur ye hamare form me border bhi de deta hai -->
+    <!-- <legend></legend>: Legend ke anadar hum jo likhten hai form ke border ke top left me show hota hai. -->
+    <form>
+        <fieldset>
+            <legend>User Details</legend>
+        <label for="name">Enter your name here :</label>
+        <input type="text" id="name">
+
+        <br>
+
+        <label for="Email">Enter your email here :</label>
+        <input type="email" name="email" id="Email">
+
+        <br>
+
+        <label for="address">Enter your address here :</label>
+        <textarea name="" id="address" cols="25" rows="5"></textarea>
+
+        <br>
+
+        <label for="DOB">Ente your DOB</label>
+        <input type="date" name="" id="DOB">
+
+        <br>
+
+        <label for="user_password">Enter the password :</label>
+        <input type="password" name="password" id="user_password">
+
+        <br>
+
+        <!-- To choose only one option from manyoption : -->
+        <!-- NOTE:
+            radio buttons me yadi same name hoto humlog kewal matra ek hi button ko select kar sakten hai.
+        -->
+        Select Your Gender :
+        <br>
+        <label for="Male">Male</label>
+        <input type="radio" name="Gender" id="Male">
+        <br>
+        <label for="Female">Female</label>
+        <input type="radio" name="Gender" id="Female">
+        <br>
+        <label for="Transgender">Transgender</label>
+        <input type="radio" name="Gender" id="Transgender">
+
+        <br>
+
+        <!-- select your favourate color:
+        <input type="color" name="" id=""> -->
+        <!-- NOTE:
+            checkboxes me yadi same name hoto humlog ek hi jyada checkbox ko check(select) kar sakten hai.
+        -->
+        Select your favourate movies :
+        <label for="Avenger">Avenger</label>
+        <input type="checkbox" name="movies" id="Avenger">
+        <br>
+        <label for="Thor">Thor</label>
+        <input type="checkbox" name="movies" id="Thor">
+        <br>
+        <label for="Ironman">Ironman</label>
+        <input type="checkbox" name="movies" id="Ironman">
+
+        <br>
+
+        <input type="submit" value="Click Query">
+        </fieldset>
+        
+    </form>
+</body>
+</html>
