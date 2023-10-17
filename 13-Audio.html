@@ -4,6 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title> Audio on web-page </title>
+    <!-- night Mode on -->
+    <Style>
+        *{
+            background-color: #212121;
+            color: aqua;
+        }
+    </Style>
 </head>
 <body>
     <h1>Audio on web-page</h1>
@@ -13,10 +20,23 @@
     <!-- First way of adding audio(using 'audio-tag') on webpage: -->
     <audio src="https://www.pagalwrold.com/files/download/id/16343" controls autoplay muted >Song</audio>
 
+
+
     <!-- 2nd way of adding audio(usiong 'audio' and 'source') on webpage:(Iska ek fayeda ye hai ki jab ek source lode nahi hoga to dusra wala source lode hojayega.) -->
+
+<!-- 
+    controls : Ye audio me controlles ko daal deta hai.
+
+    autoplay : Jab hamara webpage lode hoga tab audio automatically play hone lagega.
+
+    muted : Ye audio ko mute kardeta hai.(matlab ki jab audio webpage par lode hoga to hamara audio muted hoga.
+  -->
     <audio controls autoplay muted >
         <source src="https://www.pagalwrold.com/files/download/id/15633">
         <source src="https://www.pagalwrold.com/files/download/id/16361">
     </audio>
+<!-- 
+***** Jab sabse pehle web-page load hoga tab , Isme jo first ' source src="" ' hai wahi lode hoga , aur yadi first ' source src="" ' load nahi hoga tab second ' source src="" ' load hojayega .
+ -->
 </body>
 </html>

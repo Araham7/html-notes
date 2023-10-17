@@ -4,15 +4,48 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Text styling Tags</title>
+    <!-- night Mode on -->
+    <Style>
+        *{
+            background-color: #212121;
+            color: aqua;
+        }
+    </Style>
 </head>
 <body>
+    
     <!-- 
         <b></b> : Bold tag ,
+        <strong></strong> : Ye bhi bold tag ki tarhe sentence ko "dark" aur "mota" kardega ,
         <i></i> : Italic tag ,
         <u></u> : Underline tag ,
-        <del></del> : deleting tag (Ye tag kisi chij ko likh karke bich se cut karnekeliyeuse hota hai)
+        <del></del> : deleting tag (Ye tag kisi chij ko likh karke bich se cut karnekeliyeuse hota hai) ,
+        <strike></strike> : Ye bhi "delete" ki tarhahi sentence ko ko likh karke cut kardega .
      -->
+     
     <h1>Text styling.</h1>
-    <span>Lorem <del>ipsum dolor</del> <b>sit amet consectetur adipisicing</b> elit. Eligendi similique perspiciatis, <i>eos excepturi voluptates</i> fugit aliquam iure voluptas aliquid cumque, a nobis. <u>Magni enim nostrum</u> ut sapiente, beatae quidem quod.</span>
+    <span>
+        Lorem 
+        <del>ipsum dolor</del>  <!-- delete --> 
+
+        <strike>amma</strike>  <!-- Ye Sentense ko likh karke cut kardega . -->
+
+        <b>sit amet consectetur adipisicing</b> <!-- Ye sentence ko dark aur thorasa mota kardega . -->
+
+        elit.
+
+        <strong>Eligendi similique perspiciatis</strong>  <!-- Ye bhi Sntence ko dark aur mota kardeta hai -->
+
+        , 
+
+        <i>eos excepturi voluptates</i> <!-- Ye sentence ko italic(tircha) kardega . -->
+
+        fugit aliquam iure voluptas aliquid cumque, a nobis.
+
+        <u>Magni enim nostrum</u>   <!-- Ye sentence ko underline kardega . -->
+
+        ut sapiente, beatae quidem quod.
+        
+    </span>
 </body>
 </html>

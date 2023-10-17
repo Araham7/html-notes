@@ -4,48 +4,75 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Forms of HTML</title>
+    <!-- night Mode on -->
+    <Style>
+        *{
+            background-color: #212121;
+            color: aqua;
+        }
+    </Style>
 </head>
 <body>
-                                        <!-- form -->
 
-    <!-- id="" : 'data' form ke kis field ka hai use janne ke liye "id" ka use kiya jata hai. -->
-    <!-- name="" : kisi field ke accourding kya value server me aa raha hai use janne keliye humlog name attribte ka prayog karten hai.  -->
-    <!-- <label for=""></label> : Lable hame ye batlata hai ki form ke kis hisse me kya fill karna hai. -->
-    <!-- <fieldset></fieldset> : fieldset ke andar me form ka code likhne se hamara ek form ka code dusre form ke code se saperate rehta hai.Aur ye hamare form me border bhi de deta hai -->
-    <!-- <legend></legend>: Legend ke anadar hum jo likhten hai form ke border ke top left me show hota hai. -->
+                            <!-- form -->
+
+    <!-- 
+       (1).  *** <legend></legend>: Legend ke anadar hum jo likhten hai form ke border ke top left me show hota hai.
+     -->
+
+    <!-- 
+        (2). *** <fieldset></fieldset> : fieldset ke andar me form ka code likhne se hamara ek form ka code dusre form ke code se saperate rehta hai . Aur ye hamare form me border bhi de deta hai
+     -->
+
+    <!-- 
+        (3). *** id="" : Ye hame backend me batlata hai , ki form ka 'data' kis "field" ka hai .
+     -->
+
+    <!-- 
+        (4). *** name="" : kisi "field" ke accourding server me kya value aa raha hai use janne keliye humlog "name attribte" ka prayog karten hai.
+      -->
+
+    <!-- 
+        (5). *** <label for=""></label> : Lable hame ye batlata hai ki form ke kis hisse me kya fill karna hai.
+     -->
+
+
     <form>
-        <fieldset>
+        <fieldset style="width: 600px;">
             <legend>User Details</legend>
         <label for="name">Enter your name here :</label>
-        <input type="text" id="name">
+        <input type="text" id="name" placeholder="kya baat hai jo tum itna muskura raheho ?">
 
         <br>
 
-        <label for="Email">Enter your email here :</label>
+        <label for="Email"> Enter your email here :--- </label>
         <input type="email" name="email" id="Email">
 
         <br>
 
-        <label for="address">Enter your address here :</label>
+        <label for="address"> Enter your address here :--- </label>
         <textarea name="" id="address" cols="25" rows="5"></textarea>
 
         <br>
 
-        <label for="DOB">Ente your DOB</label>
+        <label for="DOB"> Ente your DOB :--- </label>
         <input type="date" name="" id="DOB">
 
         <br>
 
-        <label for="user_password">Enter the password :</label>
+        <label for="user_password"> Enter the password :--- </label>
         <input type="password" name="password" id="user_password">
 
         <br>
 
+        
+
         <!-- To choose only one option from manyoption : -->
-        <!-- NOTE:
+        <!-- 
+            NOTE:
             radio buttons me yadi same name hoto humlog kewal matra ek hi button ko select kar sakten hai.
         -->
-        Select Your Gender :
+        Select Your Gender :---
         <br>
         <label for="Male">Male</label>
         <input type="radio" name="Gender" id="Male">
@@ -60,15 +87,22 @@
 
         <!-- select your favourate color:
         <input type="color" name="" id=""> -->
-        <!-- NOTE:
-            checkboxes me yadi same name hoto humlog ek se jyada checkbox ko check(select) kar sakten hai.
+
+        <!-- NOTE :---
+            ***** checkboxes me yadi same name hoto humlog ek se jyada checkbox ko check(select) kar sakten hai.
         -->
-        Select your favourate movies :
+        <!-- 
+            NOTE :---
+            ***** input:checkbox : Agar humlog isme attribute "checked" dedenge to jab browser lode hoga to automatically checked rahega .
+         -->
+
+        Select your favourate movies :---
+        <br>
         <label for="Avenger">Avenger</label>
-        <input type="checkbox" name="movies" id="Avenger">
+        <input type="checkbox" name="movies" id="Avenger" >
         <br>
         <label for="Thor">Thor</label>
-        <input type="checkbox" name="movies" id="Thor">
+        <input type="checkbox" name="movies" id="Thor" checked >
         <br>
         <label for="Ironman">Ironman</label>
         <input type="checkbox" name="movies" id="Ironman">
